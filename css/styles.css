@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rule for images */
+img {
+	max-width: 60%;
+	display: block;
+}
+
+/* Style rules for header content */
+header {
+	text-align: center;
+	font-size: 3em;
+	color: #373684;
+	height: 268px;
+}
+
+header img {
+	margin: 0 auto;
+	height: auto;
+	padding-top: 20px;
+}
+
+h1 {
+	font-family: 'Tw Cen MT', 'Verdana', 'Arial', 'sans-serif';
+	margin: 0;
+	text-align: center;
+}
+
+nav {
+	margin: 0 auto;
+	width: 100%;
+	overflow: auto;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 2em;
+	margin: 0 auto;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	font-family: 'Gill Sans MT', 'Verdana', 'Arial', 'sans-serif';
+	text-shadow: 3px 3px 3px black;
+}
+
+.button {
+	background-color: #FF00FF;
+	border-radius: 15px;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	text-shadow: 3px 3px 3px black;
+	transition-duration: 0.2s;
+}
+
+.button:hover {
+	background-color: #FF8AFF;
+	color: #A300A3;
+	text-shadow: 0px 0px 0px black;
+	text-align: center;
+}
+
+.mainbutton {
+	background-color: #FED000;
+	border-radius: 15px;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	text-shadow: 3px 3px 3px black;
+	transition: transform .2s;
+}
+
+.mainbutton:hover {
+	background-color: #fff;
+	color: black;
+	text-shadow: 0px 0px 0px black;
+	transform: scale(1.1);
+}
+
+/* Style rules for main content */
+main {
+	margin: 0;
+	padding: 2%;
+	overflow: auto;
+	text-align: center;
+	background: rgb(2 5 5 / 75%);
+}
+
+main p {
+	opacity: 100%;
+	font-size: 1.25em;
+	margin: 0 auto;
+	color: white;
+	font-family: 'PM Dialog Regular', 'Verdana', 'Arial', 'sans-serif';
+	text-align: center;
+	text-shadow: 4px 4px 1px black;
+}
+
+main a {
+	margin: 0;
+	font-size: 1.25em;
+	text-decoration: none;
+	font-family: 'Gill Sans MT', 'Verdana', 'Arial', 'sans-serif';
+}
+
+main a:hover {
+	margin: 0;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0px 0px 20px black;
+}
+
+main img {
+	margin: 0 auto;
+	height: auto;
+	padding: 20px;
+}
+
+main h1 {
+	margin: 0 auto;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	color: white;
+	text-align: center;
+	text-shadow: 4px 4px 1px black;
+}
+
+#contact {
+	text-align: center;
+}
+
+#contact a {
+	color: #4645a8;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.link {
+	text-decoration: none;
+	color: blue;
+}
+
+.link:visited {
+	text-decoration: none;
+	color: blue;
+}
+
+.link:hover {
+	text-decoration: none;
+	color: white;
+}
+
+/* within paragraph */
+p {
+	line-height: 25px;
+}
+
+.map {
+	border: 5px solid #e6e6e6;
+	border-radius: 15px;
+}
+
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px 3px black;
+	font-size: 0.99em;
+	clear: left;
+	font-family: 'Arial Rounded MT', 'Verdana', 'Arial', 'sans-serif';
+}
+
+footer a {
+	color: #4645a8;
+	text-decoration: none;
+}
+
+body {
+	background: purple;
+}
+
+:root {
+  --backgroundSize: 320px;
+}
+
+body {
+	background-image: url(https://hyperlink1991.neocities.org/pattern.jpg);
+	background-size: var(--backgroundSize);
+	animation: movingBackground 10s linear infinite;
+}
+
+@keyframes movingBackground {
+  from { background-position: 0 0;}
+  to {background-position: var(--backgroundSize) var(--backgroundSize);}
+}
+
+.xbutton {
+	filter: brightness(40%);
+	background-color: #FF00FF;
+	border-radius: 15px;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 30px;
+	text-shadow: 3px 3px 3px black;
+}
+
+.xbutton:hover {
+	user-select: none;  
+}
+
+main pre {
+	opacity: 100%;
+	font-size: 1.25em;
+	margin: 0 auto;
+	color: white;
+	font-family: 'PM Dialog Regular', 'Verdana', 'Arial', 'sans-serif';
+	text-align: center;
+	text-shadow: 4px 4px 1px black;
+	margin-bottom: 20px;
+}
