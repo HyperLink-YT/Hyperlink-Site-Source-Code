@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>High-Tech Media Log - Home</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" type="image/x-icon" href="images/hyper.ico">
+	</head>
+
+	<body>
+		
+		<!-- It's technically not HTML verified to get rid of "muted" variable, but who cares? The music works upon startup! -->
+		<audio autoplay loop>
+			<source src="music/mus.mp3" type="audio/mpeg">
+		Your browser SUCKS at playing basic MP3s!
+		</audio>
+		
+		<script>
+			document.addEventListener('click', function() {
+			var audio = document.getElementById('bgMusic');
+			audio.muted = false;
+			audio.play();
+		}, { once: true });
+		</script>
+		
+		<header>
+			<img src="images/logo.png" alt="Hyperlink's High-Tech Media Log Logo">
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="#" class="xbutton"><b>HOME</b></a></li>
+				<li><a href="port.html" class="button"><b>PORTFOLIO</b></a></li>
+				<li><a href="about.html" class="button"><b>ABOUT</b></a></li>
+				<li><a href="contact.html" class="button"><b>CONTACT</b></a></li>
+			</ul>
+		</nav>
+
+		<main>
+
+			<p>The place to learn all about Hyperlink the Electric Rabbit.</p>
+
+		</main>
+
+		<footer>
+			<p><b>&copy;Hyperlink 2026</b></p>
+		</footer>
+
+	</body>
+	
+</html>
